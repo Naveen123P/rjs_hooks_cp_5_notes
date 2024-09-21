@@ -1,12 +1,14 @@
-// Write your code here
+import {ListItem, Title, Note} from './styledComponents'
+
 const NoteItem = props => {
-  const {details} = props
-  const {title, notes} = details
+  const {noteDetails} = props
+  const {title, noteText} = noteDetails
+
   return (
-    <li>
-      <h1>{title}</h1>
-      <p>{notes}</p>
-    </li>
+    <ListItem>
+      <Title>{title}</Title>
+      <Note>{noteText}</Note>
+    </ListItem>
   )
 }
 
